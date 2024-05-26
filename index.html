@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لعبة خمن الكلمة</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="score-container">
+        <p>عدد النقاط: <span id="score" style="color: black;">0</span></p>
+    </div>
+    <div class="game-container">
+        <h1 class="game-title">لعبة خمن الكلمة</h1>
+        <h2 id="stageDisplay">مرحلة رقم 1</h2>
+        <div class="animation-container">
+            <img id="hangman" src="images/child.png" alt="Hangman">
+        </div>
+        <div class="word-display" id="wordDisplay">_ _ _</div>
+        <div class="input-container">
+            <input type="text" id="guessInput" maxlength="1" placeholder="أدخل حرف">
+            <button onclick="makeGuess()">خمن</button>
+        </div>
+        <div class="letters-container" id="lettersContainer">
+            <!-- سيتم إضافة الحروف هنا -->
+        </div>
+        <p class="message" id="message"></p>
+        <p>محاولات متبقية: <span id="attemptsLeft">6</span></p>
+        <button onclick="useHelp()" id="helpButton">مساعدة</button>
+        <p>مرات متبقية لاستخدام المساعدة: <span id="helpCounter">3</span></p>
+        <button id="startNewGameButton">ابدأ لعبة جديدة</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
