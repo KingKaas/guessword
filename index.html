@@ -11,12 +11,13 @@
         <p>عدد النقاط: <span id="score" style="color: black;">0</span></p>
     </div>
     <div class="game-container">
-        <h1 class="game-title">لعبة خمن الكلمة</h1>
+        <h1 >لعبة الكلمات</h1>
         <h2 id="stageDisplay">مرحلة رقم 1</h2>
         <div class="animation-container">
             <img id="hangman" src="images/child.png" alt="Hangman">
         </div>
         <div class="word-display" id="wordDisplay">_ _ _</div>
+        <div id="categoryDisplay" class="category-display"></div>
         <div class="input-container">
             <input type="text" id="guessInput" maxlength="1" placeholder="أدخل حرف">
             <button onclick="makeGuess()">خمن</button>
@@ -25,9 +26,9 @@
             <!-- سيتم إضافة الحروف هنا -->
         </div>
         <p class="message" id="message"></p>
-        <p>محاولات متبقية: <span id="attemptsLeft">6</span></p>
+        <p>محاولات متبقية: <span id="attemptsLeft">9</span></p>
         <button onclick="useHelp()" id="helpButton">مساعدة</button>
-        <p>مرات متبقية لاستخدام المساعدة: <span id="helpCounter">3</span></p>
+        <p> </span></p>
         <button id="startNewGameButton" onclick="startGame(true)">ابدأ لعبة جديدة</button>
     </div>
     <script src="script.js"></script>

@@ -77,6 +77,11 @@ button {
     font-size: 2.5vw; /* Responsive font size */
 }
 
+.category-display {
+    font-size: 2.5vw; /* Responsive font size */
+    margin-bottom: 2vh;
+}
+
 .letters-container {
     display: flex;
     flex-wrap: wrap;
